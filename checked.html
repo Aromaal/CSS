@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS :checked Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    input[type="checkbox"] + label {
+      color: #555;
+      cursor: pointer;
+    }
+
+    input[type="checkbox"]:checked + label {
+      color: green;
+      font-weight: bold;
+    }
+
+    #toggle:checked ~ .panel {
+      max-height: 200px;
+      padding: 10px;
+      background: #eef;
+    }
+
+    .panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>To‑Do List</h2>
+  <div>
+    <input type="checkbox" id="task1" />
+    <label for="task1">Sleep</label>
+  </div>
+  <div>
+    <input type="checkbox" id="task2" />
+    <label for="task2">Eat</label>
+  </div>
+
+  <!-- <hr />
+
+  <input type="checkbox" id="toggle" />
+  <label for="toggle">Show more info</label>
+  <div class="panel">
+    <p>This is the hidden content. It appears when the box is checked!</p>
+  </div> -->
+
+</body>
+</html>

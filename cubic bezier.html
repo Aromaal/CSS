@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cubic‑Bezier Transition Demo</title>
+  <style>
+    .box {
+      width: 150px;
+      height: 80px;
+      background: #28a745;
+      margin: 100px auto;
+      transition: width 2s cubic-bezier(0.3, 0.7, 1.0, 0.1);
+    }
+
+    .box:hover {
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <p style="text-align:center;">select  the green box</p>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+          body{
+            display: flex;
+            flex-direction: column;
+            height: 2000px;
+          }
+
+
+         .container{
+            display: flex;
+            gap: 40px;
+         }
+
+
+        .static {
+            width: 350px;
+            height: 200px;
+            background-color: rgb(53, 133, 84);
+            line-height: 100px ;
+
+            
+
+        }
+
+        .static1{
+            background-color: rgb(43, 0, 255);
+            padding: 10px;
+            margin: 5px;
+            
+        }
+
+        .static2{
+            background-color: rgb(91, 43, 135);
+            padding: 10px;
+            margin: 5px;
+
+        }
+
+        .static3{
+            background-color: rgb(144, 207, 238);
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .relative{
+            width: 350px;
+            height: 200px;
+            background-color: rgb(109, 172, 73);
+            line-height: 100px;
+            
+            
+        }
+
+        .relative1{
+            
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            margin: 5px;
+        }
+        
+        .relative2{
+
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            margin: 5px;
+            top: 35px;
+            left: 50px;
+            position: relative;
+            
+        }
+            
+        .relative3{
+            
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            margin: 5px;
+
+        }
+        
+
+        .absolute{
+            width: 350px;
+            height: 200px;
+            background-color: rgb(158, 170, 81);
+            
+        }
+
+        .absolute1{
+            position: relative;
+            width: 150px;
+            height: 80px;
+            margin: 10px;
+        
+
+        }
+
+        .absolute2{
+            position: absolute;
+            width: 150px ;
+            height: 80px ;
+            top: 50px;
+            right: 500px;
+
+        }
+
+
+        .fixed-box{
+            width: 350px;
+            height: 200px;
+            background-color: rgb(131, 170, 81);
+            top: 10px;
+            right:10px;
+            position: fixed;
+
+            
+        }
+
+        .fixed1{
+            
+            width: 150px;
+            height: 80px;
+            margin: 10px;
+        
+
+        }
+
+        .fixed2{
+            position: absolute;
+            width: 150px ;
+            height: 80px ;
+            top: 50px;
+            right: 100px;
+
+        }
+
+         
+
+    </style>
+</head>
+
+<body>
+    <div  class="container">
+        <div class="static">
+            <span class="static1"> static1</span>
+            <span class="static2">static2 </span> 
+            <span class="static3"> static3</span>
+        </div>
+
+        <div class="relative">
+            <span class="relative1" style="background-color: rgb(131, 255, 127);"> relative1</span>
+            <span class="relative2" style="background-color: blue;">relative2</span>
+            <span class="relative3" style="background-color: rgb(107, 47, 73);">relative3</span>
+
+        </div>
+
+        <div class="absolute">
+               <div class="absolute1" style="background-color: rgb(255, 192, 192);"></div>
+               <div class="absolute2" style="background-color: rgb(107, 106, 47);"></div>
+        </div>
+
+          <div class="fixed-box">
+               <div class="fixed1" style="background-color: rgb(255, 192, 192);"></div>
+               <div class="fixed2" style="background-color: rgb(107, 47, 47);"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>

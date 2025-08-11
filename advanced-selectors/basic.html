@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[required]{
+            border: 2px solid red;
+        }
+
+        input[type="email"]{
+            background-color: skyblue;
+        }
+
+        div[class~="highlite"]{
+            background-color: yellow;
+        }
+
+        p[lang|="en"]{
+            color: blue;
+        }
+
+        a[href^="https"]{
+            color: green;
+        }
+
+         a[href*="about"]{
+            font-weight:bold ;
+            text-decoration: underline;
+            color: red;
+         }
+         img[src$="630"]{
+            border: 2px solid orange;
+            width: 120px;
+         }
+    </style>
+</head>
+<body>
+      <h2>Css attribute selector demo</h2>
+
+      <input type="text" placeholder="Your name" required> <br><br>
+
+      <input type="email" placeholder="Your Email"> <br><br>
+
+      <div class="highlite"> highlited box</div>
+
+      <p lang="en">english paragraph</p>
+
+      <a href="https://example.com/home">home page</a> <br>
+
+      <a href="https://example.com/about">About Us</a> <br>
+
+      <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" alt="image">
+
+
+</body>
+</html>

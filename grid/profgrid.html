@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  margin: 0;
+  background-color: #1e1e2f;
+  font-family: sans-serif;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header  header    header"
+    "sidebar content1  content1"
+    "sidebar content2  content3"
+    "footer  footer    footer";
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: auto 1fr 1fr auto;
+  gap: 10px;
+  padding: 10px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.header {
+  grid-area: header;
+  background: linear-gradient(to right, #a18cd1, #fbc2eb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: linear-gradient(to bottom, #43cea2, #185a9d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.content1 {
+  grid-area: content1;
+  background: linear-gradient(to bottom right, #36d1dc, #5b86e5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.content2 {
+  grid-area: content2;
+  background: linear-gradient(to bottom right, #a18cd1, #36d1dc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.content3 {
+  grid-area: content3;
+  background: linear-gradient(to bottom right, #5b86e5, #a18cd1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.footer {
+  grid-area: footer;
+  background: linear-gradient(to right, #a18cd1, #fbc2eb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+  <header class="header">header</header>
+  <aside class="sidebar">sidebar</aside>
+  <div class="content1">Content-1</div>
+  <div class="content2">Content-2</div>
+  <div class="content3">Content-3</div>
+  <footer class="footer">footer</footer>
+</div>
+
+</body>
+</html>
